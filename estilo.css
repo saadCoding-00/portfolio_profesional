@@ -146,7 +146,8 @@
         }
         
         #sobremi .contenedor-foto {
-            max-width: 400px;
+            min-width: 400px;
+            max-width: 500px;
             margin-right: 80px;
         }
         
@@ -697,7 +698,8 @@
                 display: block;
             }
             #sobremi .contenedor-foto {
-                max-width: 200px;
+                min-width: 300px;
+                max-width: 300px;
                 margin: auto;
             }
             #sobremi .contenedor-foto img {
