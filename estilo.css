@@ -40,6 +40,7 @@
         #inicio .contenido header .contenido-header h1 {
             text-align: center;
             color: #1CB698;
+            font-size: 30px;
         }
         
         #inicio .contenido header .contenido-header nav ul {
@@ -665,7 +666,7 @@
         
         @media screen and (max-width: 800px) {
             .redes {
-                display: none;
+                /* display: none; */
             }
             nav {
                 display: none;
