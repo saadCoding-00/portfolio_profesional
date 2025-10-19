@@ -823,3 +823,99 @@
         .project-card p {
             margin-bottom: 10px;
         }
+
+        /* --- Fondo dinámico --- */
+#inicio {
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #000);
+    background-size: 400% 400%;
+    animation: movimientoFondo 15s ease infinite;
+    height: 100vh;
+}
+@keyframes movimientoFondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* --- Animaciones suaves al entrar --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1s ease forwards;
+}
+.fade-in-delay {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1s ease forwards 0.5s;
+}
+.fade-in-delay2 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1s ease forwards 1s;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Botón interactivo --- */
+.boton-efecto {
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    border: 2px solid #1CB698;
+}
+
+.boton-efecto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #1CB698;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.boton-efecto:hover::before {
+    left: 0;
+}
+
+.boton-efecto:hover {
+    color: #000;
+}
+
+/* --- Efectos de hover más modernos en menú --- */
+#inicio .contenido header .contenido-header nav ul li a {
+    position: relative;
+    overflow: hidden;
+}
+#inicio .contenido header .contenido-header nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #1CB698;
+    transition: width 0.3s;
+}
+#inicio .contenido header .contenido-header nav ul li a:hover::after {
+    width: 100%;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+#inicio .contenido {
+    position: relative;
+    z-index: 1;
+}

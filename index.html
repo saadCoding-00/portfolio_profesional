@@ -5,15 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
     <title>SAAD portfolio</title>
 </head>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.3/tsparticles.bundle.min.js"></script>
+<script>
+    tsParticles.load("particles-js", {
+        particles: {
+            number: { value: 70 },
+            color: { value: "#1CB698" },
+            shape: { type: "circle" },
+            opacity: { value: 0.4 },
+            size: { value: 3 },
+            move: { enable: true, speed: 1.5 },
+            links: {
+                enable: true,
+                color: "#1CB698",
+                distance: 120,
+                opacity: 0.3
+            }
+        },
+        interactivity: {
+            events: {
+                onHover: { enable: true, mode: "repulse" },
+                onClick: { enable: true, mode: "push" }
+            },
+            modes: {
+                repulse: { distance: 100 },
+                push: { quantity: 4 }
+            }
+        },
+        background: {
+            color: "#000000"
+        }
+    });
+</script>
 
 <body>
     <!-- SECCION I N I C I O -->
     <section id="inicio">
+        <div id="particles-js"></div>
         <div class="contenido">
             <header>
                 <div class="contenido-header">
@@ -37,16 +71,27 @@
                     <div class="redes">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-                        <a href="https://www.linkedin.com/in/saad-faham-9aba89248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/saad-faham-9aba89248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i
+                                class="fab fa-linkedin"></i></a>
 
                     </div>
                 </div>
             </header>
-            <div class="presentacion">
+            <!-- <div class="presentacion">
                 <p class="bienvenida">Bienvenidos</p>
                 <h2>Soy <span>Saad Faham</span>, Desarrollador Multiplataforma</h2>
                 <p class="descripcion">Aquí encontrarás una muestra de mi trabajo, donde la creatividad se une con la funcionalidad para crear experiencias memorables. </p>
                 <a href="#portfolio">Ir a Portafolio</a>
+            </div> -->
+            <div class="presentacion">
+                <p class="bienvenida fade-in">Bienvenidos</p>
+                <h2 class="fade-in-delay">Soy <span>Saad Faham</span>, <span class="typed"></span></h2>
+                <p class="descripcion fade-in-delay2">
+                    Aquí encontrarás una muestra de mi trabajo, donde la creatividad se une con la funcionalidad para
+                    crear experiencias memorables.
+                </p>
+                <a href="#portfolio" class="boton-efecto">Ir a Portafolio</a>
             </div>
         </div>
     </section>
@@ -60,78 +105,103 @@
             <p class="titulo-seccion">Sobre Mi</p>
             <h2>Hola, Soy <span>Saad Faham</span> </h2>
             <h3>Desarrollador Multiplataforma</h3>
-            <p>Soy graduado en Desarrollo Web, con un enfoque sólido en el Front-End, donde he trabajado creando interfaces modernas, accesibles y funcionales.
-                 Me apasiona transformar ideas en experiencias interactivas a través del diseño y la programación del lado del cliente.</p>
-            <p>Actualmente, amplío mi perfil estudiando un Grado Superior en Desarrollo de Aplicaciones Multiplataforma, enfocado principalmente en el Back-End.
-                 Este recorrido me permite tener una visión más completa del ciclo de vida de una aplicación, desde la interfaz hasta la lógica interna y la gestión de datos.</p>
-                 <p>Me considero una persona comprometida, con ganas de aprender constantemente y afrontar nuevos retos.
-                     Aspiro a crecer como desarrollador full-stack y participar en proyectos que aporten valor real mediante soluciones tecnológicas bien pensadas.</p>
-           <a href="Currículum-SAAD_FAHAM.pdf" download>📄 Descargar CV</a>
-           <a href="carta-presentacion.pdf" download>✉️ Descargar Carta de Presentación</a>
+            <p>Soy graduado en Desarrollo Web, con un enfoque sólido en el Front-End, donde he trabajado creando
+                interfaces modernas, accesibles y funcionales.
+                Me apasiona transformar ideas en experiencias interactivas a través del diseño y la programación del
+                lado del cliente.</p>
+            <p>Actualmente, amplío mi perfil estudiando un Grado Superior en Desarrollo de Aplicaciones Multiplataforma,
+                enfocado principalmente en el Back-End.
+                Este recorrido me permite tener una visión más completa del ciclo de vida de una aplicación, desde la
+                interfaz hasta la lógica interna y la gestión de datos.</p>
+            <p>Me considero una persona comprometida, con ganas de aprender constantemente y afrontar nuevos retos.
+                Aspiro a crecer como desarrollador full-stack y participar en proyectos que aporten valor real mediante
+                soluciones tecnológicas bien pensadas.</p>
+            <a href="Currículum-SAAD_FAHAM.pdf" download>📄 Descargar CV</a>
+            <a href="carta-presentacion.pdf" download>✉️ Descargar Carta de Presentación</a>
         </div>
     </section>
 
- <!-- SECCION CURRICULUM -->
- <section id="curriculum" class="curriculum">
-    <div class="contenido-seccion">
-        <h2>Curriculum</h2>
-        <div class="fila">
-            <div class="col izquierda">
-                <h3>Educación</h3>
-                <div class="item izq">
-                    <h4>Grado superior desarrollo de aplicaciones Multiplataforma(En curso)</h4>
-                    <span class="casa">Digitech Fp</span>
-                    <span class="fecha">2024 - 2026</span>
-                    <p>Formación centrada en el desarrollo de aplicaciones multiplataforma, incluyendo programación en Java y Kotlin, desarrollo web y móvil, bases de datos y herramientas de gestión empresarial.</p>
-                    <div class="conectori">
-                        <div class="circuloi"></div>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Grado superior desarrollo de aplicaciones Multiplataforma(En curso)</h4>
+                        <span class="casa">Digitech Fp</span>
+                        <span class="fecha">2024 - 2026</span>
+                        <p>Formación centrada en el desarrollo de aplicaciones multiplataforma, incluyendo programación
+                            en Java y Kotlin, desarrollo web y móvil, bases de datos y herramientas de gestión
+                            empresarial.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="item izq">
-                    <h4>Licenciatura en Ciencias Matemáticas e Informáticas– Especialización en Bases de Datos</h4>
-                    <span class="casa">Facultad de Ciencias Ben M’sick-Casablanca-Marruecos</span>
-                    <span class="fecha">2021 - 2022</span>
-                    <p>Formación centrada en el desarrollo web con enfoque en Back-End, bases de datos relacionales, estructuras de datos y programación orientada a objetos. Adquirí sólidos conocimientos en diseño de sistemas, gestión de bases de datos y desarrollo de aplicaciones funcionales y escalables.</p>
-                    <div class="conectori">
-                        <div class="circuloi"></div>
+                    <div class="item izq">
+                        <h4>Licenciatura en Ciencias Matemáticas e Informáticas– Especialización en Bases de Datos</h4>
+                        <span class="casa">Facultad de Ciencias Ben M’sick-Casablanca-Marruecos</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Formación centrada en el desarrollo web con enfoque en Back-End, bases de datos relacionales,
+                            estructuras de datos y programación orientada a objetos. Adquirí sólidos conocimientos en
+                            diseño de sistemas, gestión de bases de datos y desarrollo de aplicaciones funcionales y
+                            escalables.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="item izq">
-                    <h4>Bachillerato Científico – Especialidad en Ciencias Matemáticas (Opción A)</h4>
-                    <span class="casa">Liceo Almountada Al Ailmia-Casablanca-Marruecos</span>
-                    <span class="fecha">2017 - 2018</span>
-                    <p>Durante esta etapa formativa, cursé el Bachillerato con orientación científica, especializado en Ciencias Matemáticas (Opción A), una de las ramas más exigentes del sistema educativo marroquí. El plan de estudios incluyó asignaturas avanzadas como álgebra, geometría, análisis matemático, física y química, lo que me permitió desarrollar una fuerte capacidad de razonamiento lógico, pensamiento crítico y habilidades analíticas.
-                        Además del enfoque técnico, esta formación me ayudó a cultivar disciplina, organización y una mentalidad orientada a la resolución de problemas complejos, habilidades fundamentales que han sido clave en mi trayectoria académica y profesional posterior.</p>
-                    <div class="conectori">
-                        <div class="circuloi"></div>
+                    <div class="item izq">
+                        <h4>Bachillerato Científico – Especialidad en Ciencias Matemáticas (Opción A)</h4>
+                        <span class="casa">Liceo Almountada Al Ailmia-Casablanca-Marruecos</span>
+                        <span class="fecha">2017 - 2018</span>
+                        <p>Durante esta etapa formativa, cursé el Bachillerato con orientación científica, especializado
+                            en Ciencias Matemáticas (Opción A), una de las ramas más exigentes del sistema educativo
+                            marroquí. El plan de estudios incluyó asignaturas avanzadas como álgebra, geometría,
+                            análisis matemático, física y química, lo que me permitió desarrollar una fuerte capacidad
+                            de razonamiento lógico, pensamiento crítico y habilidades analíticas.
+                            Además del enfoque técnico, esta formación me ayudó a cultivar disciplina, organización y
+                            una mentalidad orientada a la resolución de problemas complejos, habilidades fundamentales
+                            que han sido clave en mi trayectoria académica y profesional posterior.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
                     </div>
-                </div>
-                
-            </div>
 
-            <div class="col derecha">
-                <h3>Experiencia de trabajo</h3>
-                <div class="item der">
-                    <h4>Participación en el desarrollo y pruebas de sitios web y apps móviles para clientes.</h4>
-                    <span class="casa">Empresa Informática</span>
-                    <span class="fecha">Julio 2022 – Agosto 2022</span>
-                    <p>Durante esta experiencia de un mes, tuve la oportunidad de observar de cerca el funcionamiento interno de una empresa tecnológica, con especial atención a la gestión de sitios web, bases de datos y los servicios informáticos ofrecidos a clientes. Esta pasantía me permitió comprender mejor la aplicación práctica de los conocimientos técnicos en un entorno profesional real.</p>
-                    <div class="conectord">
-                        <div class="circulod"></div>
-                    </div>
                 </div>
-                
-                <div class="item der">
-                    <h4>Práctica como Administrador de Bases de Datos y Redes</h4>
-                    <span class="casa">Only Systemes - Casablanca - Marruecos</span>
-                    <span class="fecha">Septiembre 2022 - Julio 2023</span>
-                    <p>Durante esta práctica de 10 meses, trabajé en la administración y mantenimiento de bases de datos y redes informáticas, asegurando el buen funcionamiento, la seguridad y la disponibilidad de los sistemas. Además, participé activamente en el diseño y desarrollo de aplicaciones y sitios web full-stack, lo que me permitió aplicar y ampliar mis conocimientos en programación, arquitectura web y gestión de sistemas.
-                         Esta experiencia reforzó mi perfil técnico y mi capacidad para colaborar en proyectos reales dentro de un entorno profesional.</p>
-                    <div class="conectord">
-                        <div class="circulod"></div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Participación en el desarrollo y pruebas de sitios web y apps móviles para clientes.</h4>
+                        <span class="casa">Empresa Informática</span>
+                        <span class="fecha">Julio 2022 – Agosto 2022</span>
+                        <p>Durante esta experiencia de un mes, tuve la oportunidad de observar de cerca el
+                            funcionamiento interno de una empresa tecnológica, con especial atención a la gestión de
+                            sitios web, bases de datos y los servicios informáticos ofrecidos a clientes. Esta pasantía
+                            me permitió comprender mejor la aplicación práctica de los conocimientos técnicos en un
+                            entorno profesional real.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
                     </div>
-                </div>
-                <!-- <div class="item der">
+
+                    <div class="item der">
+                        <h4>Práctica como Administrador de Bases de Datos y Redes</h4>
+                        <span class="casa">Only Systemes - Casablanca - Marruecos</span>
+                        <span class="fecha">Septiembre 2022 - Julio 2023</span>
+                        <p>Durante esta práctica de 10 meses, trabajé en la administración y mantenimiento de bases de
+                            datos y redes informáticas, asegurando el buen funcionamiento, la seguridad y la
+                            disponibilidad de los sistemas. Además, participé activamente en el diseño y desarrollo de
+                            aplicaciones y sitios web full-stack, lo que me permitió aplicar y ampliar mis conocimientos
+                            en programación, arquitectura web y gestión de sistemas.
+                            Esta experiencia reforzó mi perfil técnico y mi capacidad para colaborar en proyectos reales
+                            dentro de un entorno profesional.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="item der">
                     <h4>Práctica en ASTI Robotics Challenge</h4>
                     <span class="casa">ASTI</span>
                     <span class="fecha">Enero 2025 - Febrero 2025</span>
@@ -142,10 +212,10 @@ El proyecto fomentó competencias clave como la creatividad, innovación, trabaj
                         <div class="circulod"></div>
                     </div>
                 </div> -->
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- SECCION S E R V I C I O S -->
     <section id="servicios">
@@ -155,19 +225,22 @@ El proyecto fomentó competencias clave como la creatividad, innovación, trabaj
                 <span class="icono"> <i class="fa-solid fa-code"></i></span>
                 <h4>Diseño de Sitios Web</h4>
                 <hr>
-                <p>Diseño y desarrollo de páginas web con estructura semántica, estilos personalizados y funciones dinámicas!</p>
+                <p>Diseño y desarrollo de páginas web con estructura semántica, estilos personalizados y funciones
+                    dinámicas!</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fab fa-php"></i></span>
                 <h4>Porgramación PHP</h4>
                 <hr>
-                <p>Desarrollo aplicaciones web dinámicas y seguras utilizando PHP, uno de los lenguajes más usados en el desarrollo backend.</p>
+                <p>Desarrollo aplicaciones web dinámicas y seguras utilizando PHP, uno de los lenguajes más usados en el
+                    desarrollo backend.</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fab fa-java"></i></span>
                 <h4>Porgramación JAVA</h4>
                 <hr>
-                <p>Desarrollo de aplicaciones de escritorio con Java Swing, manejo de ficheros, colecciones y acceso a bases de datos mediante JDBC.</p>
+                <p>Desarrollo de aplicaciones de escritorio con Java Swing, manejo de ficheros, colecciones y acceso a
+                    bases de datos mediante JDBC.</p>
             </div>
         </div>
         <div class="fila">
@@ -176,20 +249,23 @@ El proyecto fomentó competencias clave como la creatividad, innovación, trabaj
                 <h4>Kotlin y Android Studio</h4>
                 <hr>
                 </ul>
-                <p>Desarrollo de aplicaciones móviles Android, diseño de interfaces con XML, gestión de actividades y almacenamiento local (SQLite)</p>
+                <p>Desarrollo de aplicaciones móviles Android, diseño de interfaces con XML, gestión de actividades y
+                    almacenamiento local (SQLite)</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-palette"></i></span>
                 <h4>Acceso a Datos</h4>
                 <hr>
-                <p>Conexión de aplicaciones con bases de datos mediante JDBC y ORM y tratamiento de datos desde ficheros, XML y JSON.</p>
+                <p>Conexión de aplicaciones con bases de datos mediante JDBC y ORM y tratamiento de datos desde
+                    ficheros, XML y JSON.</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
                 <h4>Integración de Bases de Datos</h4>
                 <hr>
-                <p>Conecto tus aplicaciones con bases de datos (MySQL, PostgreSQL, etc.) para almacenar y gestionar información de forma segura y eficaz.
-                   </p>
+                <p>Conecto tus aplicaciones con bases de datos (MySQL, PostgreSQL, etc.) para almacenar y gestionar
+                    información de forma segura y eficaz.
+                </p>
             </div>
         </div>
         <div class="fila">
@@ -197,20 +273,22 @@ El proyecto fomentó competencias clave como la creatividad, innovación, trabaj
                 <span class="icono"><i class="fab fa-python" title="Python"></i></span>
                 <h4>Porgramación PYTHON</h4>
                 <hr>
-                <p>Desarrollo de aplicaciones y creación de scripts para automatización y análisis de datos, uso de librerías estándar y orientación a objetos.</p>
+                <p>Desarrollo de aplicaciones y creación de scripts para automatización y análisis de datos, uso de
+                    librerías estándar y orientación a objetos.</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
                 <h4>Sistemas y Redes</h4>
                 <hr>
                 <p>Instalación y configuración básica de sistemas operativos (Windows y Linux).
-                  Conocimientos en redes locales, direccionamiento IP y configuración de servicios básicos</p>
+                    Conocimientos en redes locales, direccionamiento IP y configuración de servicios básicos</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fas fa-building" title="Odoo / ERP"></i></span>
                 <h4>Gestión Empresarial y ERP</h4>
                 <hr>
-                <p>Uso de Odoo para la gestión empresarial: módulos de ventas, compras, inventario, facturación y CRM.</p>
+                <p>Uso de Odoo para la gestión empresarial: módulos de ventas, compras, inventario, facturación y CRM.
+                </p>
             </div>
         </div>
     </section>
@@ -390,37 +468,44 @@ El proyecto fomentó competencias clave como la creatividad, innovación, trabaj
             <div class="projects-grid">
                 <div class="project-card">
                     <h5>👕 Tienda Online de Camisetas de Fútbol</h5>
-                    <p>Una tienda web que permite a los usuarios navegar y comprar camisetas personalizadas de distintos equipos de fútbol.</p>
+                    <p>Una tienda web que permite a los usuarios navegar y comprar camisetas personalizadas de distintos
+                        equipos de fútbol.</p>
                     <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Odoo ERP</p>
                     <a href="https://github.com/saadCoding-00/Futbol_Style" class="btn btn-primary">GitHub</a>
                 </div>
                 <div class="project-card">
                     <h5>💻 Calculadora en Java Swing</h5>
-                    <p>Una calculadora sencilla pero funcional desarrollada con Java Swing, que incluye operaciones aritméticas básicas y una interfaz fácil de usar.</p>
+                    <p>Una calculadora sencilla pero funcional desarrollada con Java Swing, que incluye operaciones
+                        aritméticas básicas y una interfaz fácil de usar.</p>
                     <p><strong>Tecnologías:</strong> Java, Swing</p>
                     <a href="https://github.com/saadCoding-00" class="btn btn-primary">GitHub</a>
                 </div>
                 <div class="project-card">
                     <h5>📇 Agenda de Contactos (Java Swing)</h5>
-                    <p>Una aplicación de agenda para gestionar contactos, que permite agregar, editar, eliminar y buscar registros fácilmente.</p>
+                    <p>Una aplicación de agenda para gestionar contactos, que permite agregar, editar, eliminar y buscar
+                        registros fácilmente.</p>
                     <p><strong>Tecnologías:</strong> Java, Swing, MySQL</p>
-                    <a href="https://github.com/saadCoding-00/Gestor_de_Contactos_JAVA-SWING" class="btn btn-primary">GitHub</a>
+                    <a href="https://github.com/saadCoding-00/Gestor_de_Contactos_JAVA-SWING"
+                        class="btn btn-primary">GitHub</a>
                 </div>
                 <div class="project-card">
                     <h5>🧑‍💼 Aplicación de Gestión de Empleados</h5>
-                    <p>Una aplicación de escritorio para gestionar los registros de empleados, incluyendo operaciones CRUD (crear, leer, actualizar, eliminar) y funciones de generación de reportes.</p>
+                    <p>Una aplicación de escritorio para gestionar los registros de empleados, incluyendo operaciones
+                        CRUD (crear, leer, actualizar, eliminar) y funciones de generación de reportes.</p>
                     <p><strong>Tecnologías:</strong> Java, Swing, MySQL</p>
                     <a href="https://github.com/saadCoding-00" class="btn btn-primary">GitHub</a>
                 </div>
                 <div class="project-card">
                     <h5>✅ Aplicación To-Do List para Android</h5>
-                    <p>Una aplicación móvil para crear y gestionar tareas diarias, con soporte para notificaciones y almacenamiento local.</p>
+                    <p>Una aplicación móvil para crear y gestionar tareas diarias, con soporte para notificaciones y
+                        almacenamiento local.</p>
                     <p><strong>Tecnologías:</strong> Kotlin, Android Studio</p>
                     <a href="https://github.com/saadCoding-00" class="btn btn-primary">GitHub</a>
                 </div>
                 <div class="project-card">
                     <h5>🌤️ Aplicación Web del Clima</h5>
-                    <p>Una aplicación web responsiva que obtiene y muestra datos meteorológicos en tiempo real mediante una API.</p>
+                    <p>Una aplicación web responsiva que obtiene y muestra datos meteorológicos en tiempo real mediante
+                        una API.</p>
                     <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
                     <a href="https://github.com/saadCoding-00" class="btn btn-primary">GitHub</a>
                 </div>
@@ -434,11 +519,13 @@ El proyecto fomentó competencias clave como la creatividad, innovación, trabaj
         <div class="redes">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-            <a href="https://www.linkedin.com/in/saad-faham-9aba89248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin"></i></a>
+            <a
+                href="https://www.linkedin.com/in/saad-faham-9aba89248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i
+                    class="fab fa-linkedin"></i></a>
         </div>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
 </body>
 

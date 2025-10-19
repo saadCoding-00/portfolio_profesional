@@ -41,3 +41,14 @@ function efectoHabilidades() {
     }
 
 }
+
+const typed = new Typed(".typed", {
+    strings: [
+        "Desarrollador Multiplataforma",
+        "Apasionado por la Tecnología"
+    ],
+    typeSpeed: 60,
+    backSpeed: 35,
+    backDelay: 1500,
+    loop: true
+});
