@@ -16,14 +16,14 @@
     tsParticles.load("particles-js", {
         particles: {
             number: { value: 70 },
-            color: { value: "#1CB698" },
+            color: { value: "#CCCCCC" },   // 🎨 Partículas gris claro
             shape: { type: "circle" },
             opacity: { value: 0.4 },
             size: { value: 3 },
             move: { enable: true, speed: 1.5 },
             links: {
                 enable: true,
-                color: "#1CB698",
+                color: "#AAAAAA",         // 🔗 Líneas gris medio
                 distance: 120,
                 opacity: 0.3
             }
@@ -39,9 +39,12 @@
             }
         },
         background: {
-            color: "#000000"
+            color: {
+                value: "linear-gradient(135deg, #1f1f1f, #2b2b2b, #3a3a3a)" // ⚙️ Degradado gris oscuro
+            }
         }
     });
+    
 </script>
 
 <body>
